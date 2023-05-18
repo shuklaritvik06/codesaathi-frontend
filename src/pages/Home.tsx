@@ -1,7 +1,8 @@
+import { FC } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
-const Home = () => {
+const Home: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   function handleSubmit() {
